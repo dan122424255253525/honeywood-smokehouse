@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu | Honeywood Smokehouse</title>
+
+    <style>
+        /* Global Background Match */
+        * { box-sizing: border-box; }
+        body { 
+            margin: 0; 
+            padding: 0; 
+            background-color: rgb(102, 75, 67); 
+            color: #f1f1f1; 
+        }
+        
+        header { background-color: rgb(255, 204, 128); padding: 10px; text-align: center; display: flex; justify-content: space-between; align-items: start; }
+        .header-form { width: 250px; }
+        .header-spacer { width: 200px; height: 100%; }
+
+        ul.topnav { display: flex; list-style-type: none; justify-content: center; margin: 0; padding: 0; background-color: rgb(51, 51, 51); font-weight: bold; font-size: x-large; }
+        ul.topnav li a { display: block; color: #f1f1f1; padding: 14px 16px; text-decoration: none; }
+        ul.topnav li a:hover { background-color: rgb(51, 51, 51); color: rgb(255, 204, 128); }
+
+        .menu-container { margin-top: 50px; margin-bottom: 50px; }
+        .menu-card { 
+            background-color: #ffffff; 
+            border-radius: 15px; 
+            border: 4px solid rgb(255, 204, 128); 
+            color: #333; 
+            height: 100%; 
+            transition: transform 0.2s; 
+        }
+        .menu-card:hover { transform: translateY(-5px); }
+        
+        .section-header { 
+            color: rgb(255, 204, 128); 
+            text-transform: uppercase; 
+            font-weight: bold; 
+            margin-bottom: 30px; 
+            border-bottom: 2px solid rgb(255, 204, 128); 
+            display: inline-block; 
+        }
+
+        .item-name { color: rgb(102, 75, 67); font-weight: bold; font-size: 1.2rem; }
+        .item-price { color: #d35400; font-weight: bold; }
+        .menu-divider { border-top: 1px dashed #ccc; margin: 10px 0; }
+
+        .footer-custom { background-color: rgb(51, 51, 51); color: #f1f1f1; padding: 60px 0 30px 0; margin-top: 50px; }
+        .footer-brand { font-size: 2.2rem; font-weight: bold; line-height: 0.9; color: rgb(255, 204, 128); text-transform: uppercase; }
+        .footer-custom a { color: #f1f1f1; text-decoration: none; font-weight: 600; display: block; margin-bottom: 12px; }
+        .footer-custom a:hover { color: rgb(255, 204, 128); }
+        .footer-bottom { margin-top: 50px; font-size: 0.9rem; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 25px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-spacer"></div>
+    <img src="../logopng.png" alt="restaurant logo">
+    <div class="header-form">
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search menu..." aria-label="Search"/>
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
+    </div>
+</header>
+
+<ul class="topnav">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../reserve.html">Reserve</a></li>
+    <li><a href="../menu.html">Menu</a></li>
+    <li><a href="../about page.html">About page</a></li>
+    <li><a href="../review page.html">Review page</a></li>
+    <li><a href="../contact.html">Contact</a></li>
+</ul>
+
+<div class="container menu-container">
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold" style="color: rgb(255, 204, 128);">THE MAIN EVENT</h1>
+        <p class="lead">Low and slow. 14-hour smoke. The heart of Honeywood.</p>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-12 text-center">
+            <h2 class="section-header">From The Pit</h2>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card menu-card shadow-lg p-4">
+                <div class="d-flex justify-content-between">
+                    <span class="item-name">Signature Brisket</span>
+                    <span class="item-price">£19.50</span>
+                </div>
+                <p class="text-muted small">14-hour smoked Prime Angus with a heavy salt & pepper crust. Sliced to order.</p>
+                <div class="menu-divider"></div>
+                
+                <div class="d-flex justify-content-between">
+                    <span class="item-name">Honey-Glazed Ribs</span>
+                    <span class="item-price">£17.00</span>
+                </div>
+                <p class="text-muted small">Full rack of St. Louis style ribs with our secret honey-rub and applewood smoke.</p>
+                <div class="menu-divider"></div>
+
+                <div class="d-flex justify-content-between">
+                    <span class="item-name">Pulled Pork Shoulder</span>
+                    <span class="item-price">£14.50</span>
+                </div>
+                <p class="text-muted small">Hickory smoked for 12 hours and hand-pulled with a tangy vinegar mop sauce.</p>
+                <div class="menu-divider"></div>
+
+                <div class="d-flex justify-content-between">
+                    <span class="item-name">Texas Hot Links</span>
+                    <span class="item-price">£13.50</span>
+                </div>
+                <p class="text-muted small">Spicy jalapeño and cheddar sausages, snapped on the grill for a smoky finish.</p>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card menu-card shadow-lg p-4">
+                <div class="d-flex justify-content-between">
+                    <span class="item-name">Smoked Half Chicken</span>
+                    <span class="item-price">£15.50</span>
+                </div>
+                <p class="text-muted small">Brined for 24 hours and finished with a citrus-honey glaze. Tender and juicy.</p>
+                <div class="menu-divider"></div>
+
+                <div class="d-flex justify-content-between">
+                    <span class="item-name">Burnt End Mac & Cheese</span>
+                    <span class="item-price">£16.00</span>
+                </div>
+                <p class="text-muted small">Creamy 5-cheese mac topped with a generous portion of crispy brisket burnt ends.</p>
+                <div class="menu-divider"></div>
+
+                <div class="d-flex justify-content-between">
+                    <span class="item-name">The Smokehouse Burger</span>
+                    <span class="item-price">£13.00</span>
+                </div>
+                <p class="text-muted small">Double wagyu patties with thick-cut bacon, onion strings, and BBQ aioli.</p>
+                <div class="menu-divider"></div>
+
+                <div class="d-flex justify-content-between">
+                    <span class="item-name">Smoked Turkey Breast</span>
+                    <span class="item-price">£15.50</span>
+                </div>
+                <p class="text-muted small">Herb-rubbed and butter-basted, thinly sliced for a lighter smoky flavor.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-5 justify-content-center">
+        <div class="col-12 text-center">
+            <h2 class="section-header">Dock & Garden</h2>
+        </div>
+        <div class="col-md-5 mb-4">
+            <div class="card menu-card shadow-lg p-4">
+                <div class="d-flex justify-content-between">
+                    <span class="item-name">Catfish Po' Boy</span>
+                    <span class="item-price">£14.00</span>
+                </div>
+                <p class="text-muted small">Cornmeal-crusted catfish with lettuce, tomato, pickles, and remoulade.</p>
+                <div class="menu-divider"></div>
+                <div class="d-flex justify-content-between">
+                    <span class="item-name">Smoked Cedar-Plank Salmon</span>
+                    <span class="item-price">£18.50</span>
+                </div>
+                <p class="text-muted small">Fresh Atlantic salmon smoked on cedar with a lemon-dill honey glaze.</p>
+            </div>
+        </div>
+        <div class="col-md-5 mb-4">
+            <div class="card menu-card shadow-lg p-4">
+                <div class="d-flex justify-content-between">
+                    <span class="item-name">Smoked Jackfruit "Pork"</span>
+                    <span class="item-price">£13.50</span>
+                </div>
+                <p class="text-muted small">Hickory-smoked pulled jackfruit tossed in our house BBQ sauce. (VG)</p>
+                <div class="menu-divider"></div>
+                <div class="d-flex justify-content-between">
+                    <span class="item-name">The Garden Pit Burger</span>
+                    <span class="item-price">£12.50</span>
+                </div>
+                <p class="text-muted small">Smoked beet and bean patty with vegan cheddar and avocado. (VG)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-5 justify-content-center">
+        <div class="col-12 text-center">
+            <h2 class="section-header">Pitmaster Special</h2>
+        </div>
+        <div class="col-md-10 mb-4">
+            <div class="card menu-card shadow-lg p-4" style="border-style: double; border-width: 6px;">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <div class="d-flex justify-content-between">
+                            <span class="item-name" style="font-size: 1.8rem;">The Honeywood Platter</span>
+                            <span class="item-price" style="font-size: 1.8rem;">£39.00</span>
+                        </div>
+                        <p class="text-muted mt-2">The ultimate feast. A massive sampler of our Signature Brisket, Honey-Glazed Ribs, and Pulled Pork. Served with corn on the cob, pit-beans, slaw, and cornbread.</p>
+                    </div>
+                    <div class="col-md-4 text-center border-start d-none d-md-block">
+                        <h4 style="color: rgb(102, 75, 67);">FEEDS 2-3</h4>
+                        <p class="small text-muted">The best way to try the whole pit!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-custom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="footer-brand">Honeywood</div>
+                <div class="footer-brand">Smokehouse</div>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="../mainpage.html">Home</a>
+                <a href="../reserve.html">Reserve</a>
+                <a href="../menu.html">Menu</a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="../about page.html">About</a>
+                <a href="../review page.html">Reviews</a>
+                <a href="../contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <a href="#" class="d-inline me-3">Terms</a>
+                    <a href="#" class="d-inline me-3">Privacy</a>
+                    <span>© 2026 Honeywood Smokehouse</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
